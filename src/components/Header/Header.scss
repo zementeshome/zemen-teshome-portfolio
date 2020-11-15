@@ -43,4 +43,8 @@ html, body {
             padding-left: 2vw;
         }
     }
+
+    &__nav-list-item:hover {
+        font-weight: bold;
+    }
 }

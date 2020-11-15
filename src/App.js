@@ -6,7 +6,49 @@ import Contact from './components/Contact/Contact';
 import Work from './components/Work/Work';
 import './App.css';
 
-function App() {
+class App extends React.Component {
+
+  state = {
+    work: [
+      {
+        id: 1, 
+        image: '', 
+        title: 'booklub', 
+        description: 'an online book club that sorts users into groups based on their literary interests and goals', 
+        year: 2020
+      },
+      {
+        id: 1, 
+        image: '', 
+        title: 'brainflix', 
+        description: 'a prototype for a new interactive video streaming platform that gets live data from a server', 
+        year: 2020
+      },
+      {
+        id: 1, 
+        image: '', 
+        title: 'adidas 2.0', 
+        description: "a mobile-first app that highlights and celebrates adidas's sustainable practices and products", 
+        year: 2020
+      },
+      {
+        id: 1, 
+        image: '', 
+        title: 'instock', 
+        description: '', 
+        year: 2020
+      },
+      {
+        id: 1, 
+        image: '', 
+        title: 'bandsite', 
+        description: 'website for an up-and-coming band with front-end and bacj-end functionality', 
+        year: 2020
+      }
+    ]
+  }
+
+  render() {
   return (
     <div className="App">
       <Router>
@@ -19,6 +61,7 @@ function App() {
       </Router>
     </div>
   );
+}
 }
 
 export default App;

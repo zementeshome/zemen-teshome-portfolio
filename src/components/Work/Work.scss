@@ -1,0 +1,13 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.work {
+
+    &__header {
+        @include mobile {
+           display: flex;
+           justify-content: center;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.home {
+    margin: 0 auto;
+
+    &__header {
+        font-family: 'Aileron Thin';
+        font-size: 60px;
+        color: red;
+        margin-left: 5vw;
+
+    }
+}
