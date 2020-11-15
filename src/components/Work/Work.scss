@@ -10,4 +10,10 @@
            justify-content: center;
         }
     }
+
+    &__image {
+        @include mobile {
+            width: 100%;
+        }
+    }
 }
