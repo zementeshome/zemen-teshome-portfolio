@@ -1,0 +1,12 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.footer {
+
+    &__container {
+        @include mobile {
+            display: inline-flex;
+        }
+    }
+}

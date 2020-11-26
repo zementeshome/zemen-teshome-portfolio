@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../Header/Header';
 import './Home.scss';
 import $ from 'jquery';
+import Footer from '../Footer/Footer';
 
 function Home() {
 
@@ -47,6 +48,7 @@ function Home() {
   </defs>
 </svg>
 </div>
+{/* <Footer /> */}
 </section>
     )
 }
