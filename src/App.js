@@ -13,7 +13,7 @@ class App extends React.Component {
     work: [
       {
         id: 1, 
-        image: '/assets/images/booklub.png', 
+        image: '/assets/images/booklub-gif-test.gif', 
         title: 'booklub', 
         description: 'an online book club that sorts users into groups based on their literary interests and goals', 
         year: 2020
