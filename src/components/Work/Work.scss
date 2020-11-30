@@ -46,5 +46,8 @@
             // position: relative;
             // top: 20%;
         }
+        @include desktop {
+            width: 30%;
+        }
     }
 }

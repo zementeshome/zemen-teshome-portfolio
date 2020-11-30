@@ -6,6 +6,10 @@ body {
     background: black;
     padding: 0;
     margin: 0;
+    // background-image: url('/src/BackgroundImage/v1.svg');
+    // background-size:contain;
+    // background-position:top;
+    // background: cover;
     // font-family: 'Aileron Regular';
   }
 
@@ -17,7 +21,7 @@ body {
   
 .intro {
   @include mobile {
-    margin-top: -6rem;
+    margin-top: -12rem;
     width: 100%;
     display: flex;
    margin-left: 2vw;
@@ -26,10 +30,10 @@ body {
   padding-top: 3rem;
 
   @include tablet {
-    margin-top: -1rem;
+    margin-top: -8rem;
   }
   @include desktop {
-    margin-top: 1rem;
+    margin-top: -4rem;
   }
   }
     // // width: 100%;
@@ -97,6 +101,23 @@ body {
     }
   }
 
+  .home__background-image  {
+    @include mobile {
+      width: 90%;
+      margin-top: -9.5rem;
+    }
+  }
+
+  .home__footer-credit {
+    @include mobile {
+      color: white;
+      font-family: 'Aileron Regular';
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 5vw;
+      font-size: 10px;
+    }
+  }
 
 // .home {
 //     margin: 0 auto;
