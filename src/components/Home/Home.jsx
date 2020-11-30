@@ -48,7 +48,9 @@ function Home() {
   </defs>
 </svg>
 </div>
+<div classname="home__background-container">
 <img className="home__background-image" src={process.env.PUBLIC_URL + '/assets/images/v2.svg'} alt="background"/>
+</div>
 <p className="home__footer-credit">3D art by zena teferi</p>
 {/* <Footer /> */}
 </section>
