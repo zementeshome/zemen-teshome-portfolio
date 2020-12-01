@@ -1,0 +1,29 @@
+@import '../../styles/partials/variables';
+
+@import '../../styles/partials/fonts';
+
+.about {
+
+    &__image-container {
+        @include mobile {
+            display: flex;
+            justify-content: center;
+        }
+        // @include tablet {
+        //     justify-content: flex-start;
+        // }
+    }
+
+    &__image {
+        @include mobile {
+            width: 70%;
+            margin-top: 2rem;
+        }
+        @include tablet {
+            width: 40%;
+        }
+        @include desktop {
+            width: 30%;
+        }
+    }
+}
