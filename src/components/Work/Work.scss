@@ -84,11 +84,12 @@
             // opacity: 0;
         }
     }
-    &__image-info:hover {
+    &__card-container:hover,
+    &__image-info {
         @include mobile {
             opacity: 1;
             // display: flex;
-            visibility: visible !important;
+            visibility: visible;
             // display: block;
         }
     }
