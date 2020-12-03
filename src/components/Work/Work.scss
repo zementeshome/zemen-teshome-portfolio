@@ -22,6 +22,12 @@
         }
     }
 
+    // &__github {
+    //     @include mobile {
+    //         margin-top: 2rem;
+    //     }
+    // }
+
     // &__image-container {
     //     @include mobile {
     //     position: relative;
@@ -65,16 +71,38 @@
             margin: 0;
             padding: 0;
             font-family: 'Aileron Bold';
-            font-size: 40px;
+            font-size: 28px;
             // display: none;
             // visibility: hidden;
             // opacity: 0;
 
         }
+        @include tablet {
+            font-size: 40px;
+        }
+        @include desktop {
+            font-size: 60px;
+        }
+    }
+
+    &__link {
+        @include mobile {
+            // display: flex;
+            // justify-content: flex-end;
+            // margin-top: -5rem;
+        }
+    }
+
+    &__link-tag {
+        @include mobile {
+            text-decoration: none;
+            color: white;
+        }
     }
 
     &__description,
-    &__year {
+    &__year,
+    &__link {
         @include mobile {
             font-size: 15px;
             font-family: 'Aileron Regular';
