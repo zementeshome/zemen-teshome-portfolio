@@ -39,7 +39,7 @@ class App extends React.Component {
         id: 1, 
         image: '/assets/images/bandsite.gif', 
         title: 'bandsite', 
-        description: 'website for an up-and-coming band with front-end and bacj-end functionality', 
+        description: 'website for an up-and-coming band with front end and back end functionality', 
         year: 2020,
         link: '</>'
       },
