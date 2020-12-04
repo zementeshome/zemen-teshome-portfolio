@@ -15,8 +15,10 @@
     &__header {
         @include mobile {
             font-family: 'Aileron UltraLight';
-            font-size: 30px;
-            margin-left: 5vw;
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            // margin-left: 5vw;
             margin-top: 2rem;
         }
     }
