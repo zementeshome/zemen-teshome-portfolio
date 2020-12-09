@@ -106,7 +106,7 @@ function About() {
                     )
                 })
             }
-            <img src={process.env.PUBLIC_URL + 'assets/images/white-arrow.jpg'} alt="arrow" onClick={() => {
+            <img className="about__scroll-top" src={process.env.PUBLIC_URL + 'assets/images/iconmonstr-arrow-66.svg'} alt="arrow" onClick={() => {
           scroll.scrollToTop()   
         }}/>
             {/* <button className="about__button" onClick={() => {

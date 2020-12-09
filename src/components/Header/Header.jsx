@@ -4,7 +4,7 @@ import './Header.scss';
 
 function Header() {
     return (
-        <section className="header">
+        <section className="header" id="header">
         <div className="header__container">
             <Link to="/" style={{textDecoration: 'none', color: 'black'}}><h1 className="header__logo">zt</h1></Link>
         </div>

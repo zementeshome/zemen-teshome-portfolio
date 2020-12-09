@@ -113,6 +113,11 @@ body {
       position: relative;
       z-index: -1;
       margin-left: 2vw;
+      opacity: 1;
+	    animation-name: fadeInOpacity;
+	    animation-iteration-count: 1;
+	    animation-timing-function: ease-in;
+	    animation-duration: 4s;
     }
     @include tablet {
       margin-top: -26rem;
@@ -144,6 +149,40 @@ body {
       margin-left: 8vw;
       margin-top: 2rem;
       width: 7%;
+      opacity: 1;
+	    animation-name: fadeInOpacity;
+	    animation-iteration-count: 1;
+	    animation-timing-function: ease-in;
+	    animation-duration: 4s;
+    }
+    @include desktop {
+      width: 5%;
+      margin-left: 5vw;
+    }
+  }
+
+  @keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .home__arrow-top {
+    @include mobile {
+      display: none;
+    }
+    @include tablet {
+      display: flex;
+      margin-left: 8vw;
+      width: 7%;
+      opacity: 1;
+	    animation-name: fadeInOpacity;
+	    animation-iteration-count: 1;
+	    animation-timing-function: ease-in;
+	    animation-duration: 4s;
     }
     @include desktop {
       width: 5%;

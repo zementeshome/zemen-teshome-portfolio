@@ -4,6 +4,7 @@ import './Home.scss';
 import $ from 'jquery';
 import Footer from '../Footer/Footer';
 import { Link as ScrollLink } from 'react-scroll';
+import { animateScroll as scroll} from 'react-scroll';
 
 function Home() {
 
@@ -49,10 +50,11 @@ function Home() {
   </defs>
 </svg>
 </div>
-<ScrollLink className="home__scroll" to="footer" smooth={true} duration={1000}><img className="home__arrow" src={process.env.PUBLIC_URL + '/assets/images/iconmonstr-arrow-65.svg'} alt=""/></ScrollLink>
+<ScrollLink className="home__scroll" to="footer" smooth={true} duration={1000}><img className="home__arrow" src={process.env.PUBLIC_URL + '/assets/images/iconmonstr-arrow-65.svg'} alt="arrow"/></ScrollLink>
 <div classname="home__background-container">
 <img className="home__background-image" src={process.env.PUBLIC_URL + '/assets/images/v2.svg'} alt="background"/>
 </div>
+<img className="home__arrow-top" src={process.env.PUBLIC_URL + 'assets/images/iconmonstr-arrow-66.svg'} alt="arrow" onClick={() => {scroll.scrollToTop()}}/>
 <Footer />
 </section>
     )

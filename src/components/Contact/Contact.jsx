@@ -13,7 +13,7 @@ function Contact() {
                 <p className="contact__info">linkedin.com/zementeshome</p>
                 <h2 className="contact__sub-heading">GITHUB</h2>
                 <p className="contact__info">github.com/zementeshome</p>
-            <img className="contact__image" src={process.env.PUBLIC_URL + '/assets/images/v1.svg'} alt="background"/>
+            {/* <img className="contact__image" src={process.env.PUBLIC_URL + '/assets/images/v1.svg'} alt="background"/> */}
             </section>
         )
     }

@@ -73,5 +73,25 @@ html, body {
         }
     }
 
+    &__scroll-top {
+        @include mobile {
+            display: flex;
+            justify-content: center;
+            margin: auto;
+            width: 20%;
+            padding-bottom: 2rem;
+        }
+        @include mobile-medium {
+            width: 15%;
+        }
+        @include tablet {
+            width: 10%;
+            // margin-top: -3rem;
+        }
+        @include desktop {
+            width: 8%;
+        }
+    }
+
 }
 
