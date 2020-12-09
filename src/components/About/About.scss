@@ -47,8 +47,30 @@ html, body {
         display: flex;
         justify-content: center;
         margin: auto;
-        border: 1px solid white;
-        width: 10%;
+        @include large-tablet {
+            justify-content: flex-end;
+            margin-top: -20rem;
+            margin-right: 11.5vw;
+        }
+        @include desktop {
+            margin-top: -22rem;
+        }
+    }
+
+    &__arrow {
+        @include mobile {
+            width: 20%;
+        }
+        @include mobile-medium {
+            width: 15%;
+        }
+        @include tablet {
+            width: 10%;
+            margin-top: -3rem;
+        }
+        @include large-tablet {
+            
+        }
     }
 
 }

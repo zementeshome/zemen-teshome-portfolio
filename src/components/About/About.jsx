@@ -89,8 +89,7 @@ function About() {
             <div className="about__image-container" ref={aboutRef}>
                 <AboutImage />
         {/* <img className="about__image" src={process.env.PUBLIC_URL + 'assets/images/memoji-laptop.png'} alt="zemen memoji"/> */}
-        <ScrollLink activeClass="active" className="about__scroll" to="me" smooth={true} duration={1000}>scroll down</ScrollLink>
-        {/* <a className="about__scroll" href="#me">scroll down</a> */}
+        <ScrollLink className="about__scroll" to="me" smooth={true} duration={1000}><img className="about__arrow" src={process.env.PUBLIC_URL + '/assets/images/iconmonstr-arrow-65.svg'} alt=""/></ScrollLink>
         </div>
         <section className="about__section-2" id="me">
             {/* <div className="about__text-container">

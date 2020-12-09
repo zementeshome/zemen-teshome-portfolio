@@ -2,15 +2,19 @@ import React from 'react'
 import { FaGithub } from 'react-icons/fa'
 import { FaLinkedinIn } from 'react-icons/fa'
 import { FaGoogle } from 'react-icons/fa'
+import './Footer.scss';
+import { Link } from 'react-router-dom';
 
 function Footer() {
     return (
-        <section className="footer">
+        <section className="footer" id="footer">
             <div className="footer__container">
-           <p className="footer__github"> <FaGithub size={30} style={{color: 'white'}}/></p>
-           <p className="footer__linkedin"> <FaLinkedinIn size={30} style={{color: 'white'}}/></p>
-           <p className="footer__gmail"> <FaGoogle size={30} style={{color: 'white'}}/></p>
+            <a className="footer__link" href="https://www.linkedin.com/in/zementeshome/" target="_blank" rel="noreferrer"><p className="footer__github"> <FaGithub /></p></a>
+            <a className="footer__link" href="https://github.com/zementeshome" target="
+            _blank" rel="noreferrer"><p className="footer__linkedin"> <FaLinkedinIn /></p></a>
+            <a className="footer__link" href="mailto: zementeshome@gmail.com" rel="noreferrer" target="_blank"><p className="footer__gmail"> <FaGoogle /></p></a>
            </div>
+           <p className="footer__credit">3D art by zena teferi</p>
         </section>
     )
 }
