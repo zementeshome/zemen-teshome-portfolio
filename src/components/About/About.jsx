@@ -7,22 +7,32 @@ import { FaBorderNone } from 'react-icons/fa';
 import { Link as ScrollLink } from 'react-scroll';
 import { animateScroll as scroll} from 'react-scroll'
 import AboutImage from '../AboutImage/AboutImage';
+import { FaHtml5 } from 'react-icons/fa';
+import { FaCss3Alt } from 'react-icons/fa';
+import { FaSass } from 'react-icons/fa';
+import { FaJs } from 'react-icons/fa';
+import { FaReact } from 'react-icons/fa';
+import { FaAngular } from 'react-icons/fa';
+import { FaNodeJs } from 'react-icons/fa';
+import { SiFirebase } from 'react-icons/si';
+import { SiMysql } from 'react-icons/si';
+import { FaGithub } from 'react-icons/fa';
+import { FaTerminal } from 'react-icons/fa';
+import { SiMicrosoftoffice } from 'react-icons/si';
+
+
 
 gsap.registerPlugin(ScrollTrigger);
 
 const sections = [
     {
-        title: 'title 1',
-        subtitle: 'subtitle 1'
+        title: 'ABOUT ME',
+        subtitle: "hi, i'm zemen and i build things. i'm a full stack developer with a professional background in public relations and communications. i recently made the transition into tech and i've been loving every second of it. i'm passionate about building user-friendly, accessible, nice-to-look at websites. when i'm not coding, i'm usually digging for music."
     },
     {
-        title: 'title 2',
-        subtitle: 'subtitle 2'
+        title: 'SKILLS',
+        subtitle: ''
     },
-    {
-        title: 'title 3',
-        subtitle: 'subtitle 3'
-    }
 ]
 
 function About() {
@@ -101,12 +111,30 @@ function About() {
                     return (
                         <div key={title} className="about__text-container" ref={addToRefs}>
                             <h2 className="about__header">{title}</h2>
+                            <div className="about__text-box">
                             <p className="about__text">{subtitle}</p>
+                            </div>
                         </div>
                     )
                 })
             }
-            <img className="about__scroll-top" src={process.env.PUBLIC_URL + 'assets/images/iconmonstr-arrow-66.svg'} alt="arrow" onClick={() => {
+            <div className="about__skills">
+            <p className="about__skills-icon"><FaHtml5 /></p>
+            <p className="about__skills-icon"><FaCss3Alt /> </p>
+            <p className="about__skills-icon"><FaSass /> </p>
+            <p className="about__skills-icon"> <FaJs /> </p>
+            <p className="about__skills-icon"> <FaReact /> </p>
+            <p className="about__skills-icon"> <FaAngular /> </p>
+            </div>
+            <div className="about__skills-second">
+            <p className="about__skills-icon"><FaNodeJs /> </p>
+            <p className="about__skills-icon"><SiFirebase /></p>
+            <p className="about__skills-icon"><SiMysql /></p>
+            <p className="about__skills-icon"> <FaGithub /></p>
+            <p className="about__skills-icon"><FaTerminal /></p>
+            <p className="about__skills-icon"><SiMicrosoftoffice /></p>
+            </div>
+            <img className="about__scroll-top" ref={aboutRef} src={process.env.PUBLIC_URL + 'assets/images/iconmonstr-arrow-66.svg'} alt="arrow" onClick={() => {
           scroll.scrollToTop()   
         }}/>
             {/* <button className="about__button" onClick={() => {
