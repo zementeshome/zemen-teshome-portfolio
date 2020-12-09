@@ -6,11 +6,7 @@ body {
     background: black;
     padding: 0;
     margin: 0;
-    // background-image: url('/src/BackgroundImage/v1.svg');
-    // background-size:contain;
-    // background-position:top;
-    // background: cover;
-    // font-family: 'Aileron Regular';
+    // font-weight: bold;
   }
 
   .container {
@@ -58,7 +54,7 @@ body {
           font-size: 64px;
         }
         @include desktop {
-          font-size: 65px;
+          font-size: 85px;
         }
       }
       .text-stroke,

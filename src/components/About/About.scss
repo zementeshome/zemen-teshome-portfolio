@@ -5,7 +5,6 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: 'Aileron UltraLight';
     // scroll-behavior: smooth;
 }
 
@@ -47,6 +46,7 @@ html, body {
 
     &__header {
         @include mobile {
+            font-family: 'Aileron UltraLight';
             font-size: 50px;
         }
         @include tablet {
