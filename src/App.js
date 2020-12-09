@@ -5,10 +5,8 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 import Work from './components/Work/Work';
 import './App.css';
-import Footer from './components/Footer/Footer';
 
 class App extends React.Component {
-
   state = {
     work: [
       {
@@ -39,7 +37,7 @@ class App extends React.Component {
         id: 1, 
         image: '/assets/images/bandsite.gif', 
         title: 'bandsite', 
-        description: 'website for an up-and-coming band with front end and back end functionality', 
+        description: 'website for an up-and-coming band with fan engangement and concert listings', 
         year: 2020,
         link: '</>'
       },
@@ -53,7 +51,6 @@ class App extends React.Component {
       }
     ]
   }
-
   render() {
   return (
     <div className="App">
@@ -67,7 +64,7 @@ class App extends React.Component {
       </Router>
     </div>
   );
-}
+ }
 }
 
 export default App;
