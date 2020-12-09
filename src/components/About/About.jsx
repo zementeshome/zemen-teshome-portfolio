@@ -4,8 +4,9 @@ import './About.scss';
 import gsap from 'gsap';
 import  { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaBorderNone } from 'react-icons/fa';
-// import { Link as ScrollLink } from 'react-scroll';
+import { Link as ScrollLink } from 'react-scroll';
 import { animateScroll as scroll} from 'react-scroll'
+import AboutImage from '../AboutImage/AboutImage';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,7 +27,7 @@ const sections = [
 
 function About() {
 
-    const [background, setBackground] = useState('#262626');
+    const [background, setBackground] = useState('#000000');
     // const [scroll, setScroll] = useState(false);
 
     const aboutRef = useRef(null)
@@ -86,9 +87,10 @@ function About() {
         <section className="about">
             <Header/>
             <div className="about__image-container" ref={aboutRef}>
-        <img className="about__image" src={process.env.PUBLIC_URL + 'assets/images/memoji-laptop.png'} alt="zemen memoji"/>
-        {/* <ScrollLink activeClass="active" className="about__scroll" to="aboutme" smooth={true} duration={1000}>scroll down</ScrollLink> */}
-        <a className="about__scroll" href="#me">scroll down</a>
+                <AboutImage />
+        {/* <img className="about__image" src={process.env.PUBLIC_URL + 'assets/images/memoji-laptop.png'} alt="zemen memoji"/> */}
+        <ScrollLink activeClass="active" className="about__scroll" to="me" smooth={true} duration={1000}>scroll down</ScrollLink>
+        {/* <a className="about__scroll" href="#me">scroll down</a> */}
         </div>
         <section className="about__section-2" id="me">
             {/* <div className="about__text-container">
