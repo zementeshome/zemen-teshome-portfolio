@@ -4,6 +4,11 @@
 
 .contact {
     color: white;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
 
     &__image {
         @include mobile {
@@ -33,7 +38,84 @@
         @include mobile {
             display: flex;
             justify-content: center;
+            font-size: 18px;
+            margin-top: -1.5rem;
+            font-family: 'Aileron Thin';
+            // text-transform: uppercase;
+        }
+        @include tablet {
+            margin-top: -3rem;
+            font-size: 25px;
+        }
+        @include desktop {
+            margin-top: -5rem;
+        }
+    }
+
+    // &__container {
+    //     margin: 0 auto;
+    //     width: 50%;
+    // }
+
+    &__sub-heading {
+        @include mobile {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            font-size: 15px;
+            font-family: 'Aileron Thin';
+        }
+        @include tablet {
             font-size: 20px;
         }
     }
+
+    &__info {
+        @include mobile {
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            font-family: 'Aileron Regular';
+            font-size: 20px;
+            padding: 2rem 0;
+            background-color: #f3ec78;
+            background-image: linear-gradient(45deg, #f3ec78, #af4261);
+            background-size: 100%;
+            -webkit-background-clip: text;
+            -moz-background-clip: text;
+            -webkit-text-fill-color: transparent; 
+            -moz-text-fill-color: transparent;
+        }
+        @include tablet {
+            font-size: 25px;
+        }
+    }
+
+    &__credit {
+        @include mobile {
+            text-align: center;
+            font-size: 12px;
+            padding-top: 1rem;
+            width: 250px;
+            margin: auto;
+        }
+    }
+
+    &__credit span {
+        font-weight: bold;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: white;
+    }
 }
+
+@keyframes fadeInOpacity {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

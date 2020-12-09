@@ -118,7 +118,7 @@ function About() {
                     )
                 })
             }
-            <div className="about__skills">
+            <div className="about__skills" ref={addToRefs}>
             <p className="about__skills-icon"><FaHtml5 /></p>
             <p className="about__skills-icon"><FaCss3Alt /> </p>
             <p className="about__skills-icon"><FaSass /> </p>
@@ -126,7 +126,7 @@ function About() {
             <p className="about__skills-icon"> <FaReact /> </p>
             <p className="about__skills-icon"> <FaAngular /> </p>
             </div>
-            <div className="about__skills-second">
+            <div className="about__skills-second" ref={addToRefs}>
             <p className="about__skills-icon"><FaNodeJs /> </p>
             <p className="about__skills-icon"><SiFirebase /></p>
             <p className="about__skills-icon"><SiMysql /></p>
