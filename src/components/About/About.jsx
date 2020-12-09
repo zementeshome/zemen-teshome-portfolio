@@ -4,9 +4,8 @@ import './About.scss';
 import gsap from 'gsap';
 import  { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaBorderNone } from 'react-icons/fa';
-// import { useEffect } from 'react'
-// import ScrollOut from 'scroll-out';
-// import { Link } from 'react-scroll';
+// import { Link as ScrollLink } from 'react-scroll';
+import { animateScroll as scroll} from 'react-scroll'
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,7 +26,8 @@ const sections = [
 
 function About() {
 
-    const [background, setBackground] = useState('#262626')
+    const [background, setBackground] = useState('#262626');
+    // const [scroll, setScroll] = useState(false);
 
     const aboutRef = useRef(null)
     const revealRefs = useRef([]);
@@ -65,8 +65,7 @@ function About() {
                 id: `section-${index+1}`,
                 trigger: el,
                 start: 'top center+=100',
-                toggleActions: 'play none none reverse',
-                markers: true
+                toggleActions: 'play none none reverse'
             }
         });
     })
@@ -79,14 +78,19 @@ function About() {
         }  
     };
 
+    // const scrollDown = () => {
+    //     scroll ? setScroll('about__section-id') : setScroll(false)
+    // }
+    console.log(scroll.scrollToTop)
     return(
         <section className="about">
             <Header/>
             <div className="about__image-container" ref={aboutRef}>
         <img className="about__image" src={process.env.PUBLIC_URL + 'assets/images/memoji-laptop.png'} alt="zemen memoji"/>
-        <button className="about__button" onClick={() => toggleBackground()}>click me</button>
+        {/* <ScrollLink activeClass="active" className="about__scroll" to="aboutme" smooth={true} duration={1000}>scroll down</ScrollLink> */}
+        <a className="about__scroll" href="#me">scroll down</a>
         </div>
-        <section className="about__section-2">
+        <section className="about__section-2" id="me">
             {/* <div className="about__text-container">
             <h1 className="about__header">ABOUT ME</h1>
             <p className="about__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
@@ -101,6 +105,12 @@ function About() {
                     )
                 })
             }
+            <img src={process.env.PUBLIC_URL + 'assets/images/white-arrow.jpg'} alt="arrow" onClick={() => {
+          scroll.scrollToTop()   
+        }}/>
+            {/* <button className="about__button" onClick={() => {
+          scroll.scrollToTop();
+        }}>scroll to top</button> */}
             </section>
         </section>
     )

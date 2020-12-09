@@ -2,9 +2,10 @@
 
 @import '../../styles/partials/fonts';
 
-body {
+html, body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 .about { 
@@ -40,6 +41,14 @@ body {
         justify-content: center;
         margin-top: 0;
         padding-top: 2rem;
+    }
+
+    &__scroll {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        border: 1px solid white;
+        width: 10%;
     }
 
 }
