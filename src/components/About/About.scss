@@ -31,6 +31,15 @@ html, body {
       }
     }
 
+    @keyframes fadeInOpacity {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
     &__text-container {
         @include mobile {
         width: 100%;
@@ -86,17 +95,16 @@ html, body {
 
     &__skills {
         @include mobile {
-        margin-top: -20rem;
+        margin: -20rem 0 0 5vw;
         display: flex;
         justify-content: center;
-        margin-left: 5vw;
+        // margin-left: 5vw;
       }
         @include tablet {
         margin-left: 2vw;
       }
         @include desktop {
-        margin-left: 0;
-        margin-top: -20rem;
+        margin: -20rem 0 0 0;
       }
     }
 
@@ -135,8 +143,7 @@ html, body {
       }
         @include large-tablet {
         justify-content: flex-end;
-        margin-top: -20rem;
-        margin-right: 11.5vw;
+        margin: -20rem 11.5vw 0 0;
       }
         @include desktop {
         margin-top: -22rem;
@@ -177,11 +184,3 @@ html, body {
    }
 }
 
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}

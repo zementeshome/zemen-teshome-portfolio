@@ -10,6 +10,15 @@
     animation-timing-function: ease-in;
     animation-duration: 2s;
 
+    @keyframes fadeInOpacity {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
     &__image {
         @include mobile {
             width: 90%;
@@ -102,12 +111,3 @@
             color: white;
         }
      }
-
-@keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
