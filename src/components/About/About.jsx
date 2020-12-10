@@ -33,32 +33,27 @@ const sections = [
 ]
 
 function About() {
-    const [background, setBackground] = useState('#000000');
+    const [background, ] = useState('#000000');
 
     const aboutRef = useRef(null)
     const revealRefs = useRef([]);
     revealRefs.current = [];
 
-    const toggleBackground = () => {
-        const color = background !== '#262626' ? '#5a7d95' : '#1b4943'
-        setBackground(color);
-    }
-
     useEffect(() => {
         gsap.to(aboutRef.current, {
             duration: 1,
             backgroundColor: background,
-            ease: 'none'
+            ease: 'ease'
         });
     }, [background])
 
     useEffect(() => {
         gsap.from(aboutRef.current, {
-        duration: 1, 
-        autoAlpha:0, 
-        ease: 'none',
-        delay: 1
-    });
+            duration: 1,
+            autoAlpha: 0,
+            ease: 'none',
+            delay: 1
+        });
 
     revealRefs.current.forEach((el, index) => {
         gsap.fromTo(el, {
@@ -75,7 +70,7 @@ function About() {
             }
         });
     })
-    },[])
+    }, [])
 
     const addToRefs = (el) => {
         if (el && !revealRefs.current.includes(el)) {

@@ -20,4 +20,4 @@ function AboutImage() {
     )
 }
 
-export default AboutImage
+export default AboutImage;

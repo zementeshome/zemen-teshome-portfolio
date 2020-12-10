@@ -2,17 +2,13 @@
 
 @import '../../styles/partials/fonts';
 
-// html, body {
-//     cursor: pointer;
-// }
-
 .contact {
     color: white;
     opacity: 1;
     animation-name: fadeInOpacity;
     animation-iteration-count: 1;
     animation-timing-function: ease-in;
-    animation-duration: 3s;
+    animation-duration: 2s;
 
     &__image {
         @include mobile {
@@ -27,7 +23,6 @@
             font-size: 40px;
             display: flex;
             justify-content: center;
-            // margin-left: 5vw;
             margin-top: 2rem;
         }
         @include tablet {
@@ -45,7 +40,6 @@
             font-size: 18px;
             margin-top: -1.5rem;
             font-family: 'Aileron Thin';
-            // text-transform: uppercase;
         }
         @include tablet {
             margin-top: -3rem;
@@ -55,11 +49,6 @@
             margin-top: -5rem;
         }
     }
-
-    // &__container {
-    //     margin: 0 auto;
-    //     width: 50%;
-    // }
 
     &__sub-heading {
         @include mobile {
@@ -95,8 +84,7 @@
         }
     }
 
-    &__credit {
-        @include mobile {
+        &__credit {
             text-align: center;
             font-size: 12px;
             padding-top: 1rem;
@@ -104,17 +92,16 @@
             margin: auto;
             padding-bottom: 2rem;
         }
-    }
 
-    &__credit span {
-        font-weight: bold;
-    }
+        &__credit span {
+            font-weight: bold;
+        }
 
-    &__link {
-        text-decoration: none;
-        color: white;
-    }
-}
+        &__link {
+            text-decoration: none;
+            color: white;
+        }
+     }
 
 @keyframes fadeInOpacity {
     0% {

@@ -8,7 +8,6 @@
     &__container {
         @include mobile {
             display: flex;
-            // margin-left: 5vw;
             margin-top: 1rem;
             margin-bottom: 0;
             justify-content: center;
@@ -22,18 +21,6 @@
             padding-right: 5vw;
             font-size: 20px;
             color: white;
-        }
-    }
-
-    &__credit {
-        @include mobile  {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: -3.5rem;
-            font-size: 10px;
-            margin-right: 9vw;
-            transform: rotate(-40deg);
-
         }
     }
 }

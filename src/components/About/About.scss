@@ -23,6 +23,11 @@ html, body {
         @include mobile {
         width: 100%;
         height: 100vh;
+        opacity: 1;
+	      animation-name: fadeInOpacity;
+	      animation-iteration-count: 1;
+	      animation-timing-function: ease-in;
+	      animation-duration: 1s;
       }
     }
 
@@ -172,3 +177,11 @@ html, body {
    }
 }
 
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

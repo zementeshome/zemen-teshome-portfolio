@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.scss';
 
@@ -15,8 +15,8 @@ function Header() {
                 <Link to="/contact" style={{textDecoration: 'none', color: 'black'}}><li className="header__nav-list-item">contact</li></Link>
             </ul>
         </nav>
-        </section>
-    )
+    </section>
+  )
 }
 
 export default Header;

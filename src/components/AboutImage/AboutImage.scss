@@ -13,10 +13,10 @@ html, body {
     padding-top: 50%;
     margin: 5rem auto;
     margin-left: 2.5rem;
-    }
+ }
     @include tablet {
-        margin-top: 2rem;
-    }
+    margin-top: 2rem;
+ }
     
     > .block {
         position: absolute;
@@ -58,10 +58,6 @@ html, body {
             transform: rotateY(30deg);
             transform-origin: 0 50%;
         }
-
-        // &.-main:hover {
-        //     transform: rotateY(-30deg);
-        // }
         
         &.-left {
             height: 100%;
