@@ -101,6 +101,8 @@ html, body {
         margin: -20rem 0 0 5vw;
         display: flex;
         justify-content: center;
+        // width: 30%;
+        flex-wrap: wrap;
         // margin-left: 5vw;
       }
         @include tablet {
@@ -110,6 +112,13 @@ html, body {
         margin: -20rem 0 0 0;
         padding-top: 6rem;
       }
+    }
+
+    &__flex {
+      display: flex;
+      flex-wrap: wrap;
+      width: 40%;
+      justify-content: center;
     }
 
     &__skills-second {

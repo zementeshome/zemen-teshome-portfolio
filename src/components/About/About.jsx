@@ -29,8 +29,8 @@ const sections = [
     },
     {
         title: 'SKILLS',
-        subtitle: ''
-    },
+        subtitle: ''    
+    }
 ]
 
 function About() {
@@ -100,21 +100,29 @@ function About() {
                 })
             }
             <div className="about__skills" ref={addToRefs}>
+                <div className="about__flex">
                 <p className="about__skills-icon"><FaHtml5 /></p>
                 <p className="about__skills-icon"><FaCss3Alt /> </p>
                 <p className="about__skills-icon"><FaSass /> </p>
                 <p className="about__skills-icon"> <FaJs /> </p>
                 <p className="about__skills-icon"> <FaReact /> </p>
                 <p className="about__skills-icon"> <FaAngular /> </p>
-            </div>
-            <div className="about__skills-second" ref={addToRefs}>
                 <p className="about__skills-icon"><FaNodeJs /> </p>
                 <p className="about__skills-icon"><SiFirebase /></p>
                 <p className="about__skills-icon"><SiMysql /></p>
                 <p className="about__skills-icon"> <FaGithub /></p>
                 <p className="about__skills-icon"><FaTerminal /></p>
                 <p className="about__skills-icon"><SiMicrosoftoffice /></p>
+                </div>
             </div>
+            {/* <div className="about__skills-second" ref={addToRefs}>
+                <p className="about__skills-icon"><FaNodeJs /> </p>
+                <p className="about__skills-icon"><SiFirebase /></p>
+                <p className="about__skills-icon"><SiMysql /></p>
+                <p className="about__skills-icon"> <FaGithub /></p>
+                <p className="about__skills-icon"><FaTerminal /></p>
+                <p className="about__skills-icon"><SiMicrosoftoffice /></p>
+            </div> */}
                 <img className="about__scroll-top" ref={aboutRef} src={Arrow} alt="arrow" onClick={() => {scroll.scrollToTop()}}/>
           </section>
      </section>
