@@ -80,11 +80,8 @@
             font-family: 'Aileron Regular';
             font-size: 20px;
             padding: 2rem 0;
-            background-color: #f3ec78;
-            background-image: linear-gradient(45deg, #f3ec78, #af4261);
-            background-size: 100%;
-            background-clip: text;
-            color: transparent;
+            color: #F9A44D;
+            
         }
         @include tablet {
             font-size: 25px;
