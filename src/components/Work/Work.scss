@@ -104,7 +104,9 @@
         }
     }
 
-    &__image-info:hover span {
+    &__image-info:hover span,
+    &__image-info:focus span,
+    &__image-info:active span {
         opacity: 1;
     }
 

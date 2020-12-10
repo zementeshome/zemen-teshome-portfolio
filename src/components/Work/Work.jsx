@@ -3,6 +3,7 @@ import WorkCard from './../WorkCard/WorkCard';
 import Header from './../Header/Header';
 import './Work.scss';
 import { animateScroll as scroll} from 'react-scroll';
+import Arrow from '../../BackgroundImage/iconmonstr-arrow-66.svg';
 
 function Work(props) {
     return (
@@ -12,7 +13,7 @@ function Work(props) {
         <div className="work__container">
             {props.work.map((workInfo) => <WorkCard key={workInfo.id} image={workInfo.image} title={workInfo.title} description={workInfo.description} year={workInfo.year} link={workInfo.link}/>)}
         </div>
-            <img className="work__scroll-top" src={process.env.PUBLIC_URL + 'assets/images/iconmonstr-arrow-66.svg'} alt="arrow" onClick={() => {
+            <img className="work__scroll-top" src={Arrow} alt="arrow" onClick={() => {
           scroll.scrollToTop()   
         }}/>
       </section>

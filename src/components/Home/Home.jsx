@@ -5,6 +5,7 @@ import $ from 'jquery';
 import Footer from '../Footer/Footer';
 import { Link as ScrollLink } from 'react-scroll';
 import { animateScroll as scroll} from 'react-scroll';
+import Arrow from '../../BackgroundImage/iconmonstr-arrow-66.svg';
 
 function Home() {
 
@@ -48,7 +49,7 @@ function Home() {
   <div classname="home__background-container">
     <img className="home__background-image" src={process.env.PUBLIC_URL + '/assets/images/v2.svg'} alt="background"/>
   </div>
-      <img className="home__arrow-top" src={process.env.PUBLIC_URL + 'assets/images/iconmonstr-arrow-66.svg'} alt="arrow" onClick={() => {scroll.scrollToTop()}}/>
+      <img className="home__arrow-top" src={Arrow} alt="arrow" onClick={() => {scroll.scrollToTop()}}/>
       <Footer />
   </section>
   )

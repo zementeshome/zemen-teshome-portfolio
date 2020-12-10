@@ -2,7 +2,6 @@
   "name": "zemen-teshome-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://zementeshome.github.io/zemen-teshome-portfolio",
   "dependencies": {
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
     "@fortawesome/react-fontawesome": "^0.1.13",
