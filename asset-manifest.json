@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/zemen-teshome-portfolio/static/css/main.e0b1e147.chunk.css",
+    "main.js": "/zemen-teshome-portfolio/static/js/main.86604c48.chunk.js",
+    "main.js.map": "/zemen-teshome-portfolio/static/js/main.86604c48.chunk.js.map",
+    "runtime-main.js": "/zemen-teshome-portfolio/static/js/runtime-main.dc7d0e91.js",
+    "runtime-main.js.map": "/zemen-teshome-portfolio/static/js/runtime-main.dc7d0e91.js.map",
+    "static/js/2.4bf3330b.chunk.js": "/zemen-teshome-portfolio/static/js/2.4bf3330b.chunk.js",
+    "static/js/2.4bf3330b.chunk.js.map": "/zemen-teshome-portfolio/static/js/2.4bf3330b.chunk.js.map",
+    "static/js/3.2968948d.chunk.js": "/zemen-teshome-portfolio/static/js/3.2968948d.chunk.js",
+    "static/js/3.2968948d.chunk.js.map": "/zemen-teshome-portfolio/static/js/3.2968948d.chunk.js.map",
+    "index.html": "/zemen-teshome-portfolio/index.html",
+    "static/css/main.e0b1e147.chunk.css.map": "/zemen-teshome-portfolio/static/css/main.e0b1e147.chunk.css.map",
+    "static/js/2.4bf3330b.chunk.js.LICENSE.txt": "/zemen-teshome-portfolio/static/js/2.4bf3330b.chunk.js.LICENSE.txt",
+    "static/media/Work.scss": "/zemen-teshome-portfolio/static/media/Aileron-UltraLight.cde43503.woff",
+    "static/media/ZemenTeshome_Resume.43b7b883.pdf": "/zemen-teshome-portfolio/static/media/ZemenTeshome_Resume.43b7b883.pdf",
+    "static/media/AboutImage.scss": "/zemen-teshome-portfolio/static/media/Zemen_Teshome_WebDev.87b828bb.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dc7d0e91.js",
+    "static/js/2.4bf3330b.chunk.js",
+    "static/css/main.e0b1e147.chunk.css",
+    "static/js/main.86604c48.chunk.js"
+  ]
+}
