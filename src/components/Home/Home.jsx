@@ -6,7 +6,6 @@ import Footer from '../Footer/Footer';
 import { Link as ScrollLink } from 'react-scroll';
 import { animateScroll as scroll} from 'react-scroll';
 import Arrow from '../../BackgroundImage/iconmonstr-arrow-66.svg';
-import Background from '../../BackgroundImage/v2.svg';
 
 function Home() {
 
@@ -48,8 +47,7 @@ function Home() {
 </div>
       <ScrollLink className="home__scroll" to="footer" smooth={true} duration={1000}><img className="home__arrow" src={process.env.PUBLIC_URL + '/assets/images/iconmonstr-arrow-65.svg'} alt="arrow"/></ScrollLink>
   <div classname="home__background-container">
-   {/* <div className="home__background-image"></div> */}
-    <img className="home__background-image" src={Background} alt="background"/>
+   <div className="home__background-image"></div>
   </div>
       <img className="home__arrow-top" src={Arrow} alt="arrow" onClick={() => {scroll.scrollToTop()}}/>
       <Footer />

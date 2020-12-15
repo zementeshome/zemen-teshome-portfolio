@@ -1,8 +1,6 @@
 import React from 'react'
 import Header from './../Header/Header';
 import './Contact.scss';
-import Pdf from '../../BackgroundImage/ZemenTeshome_Resume.pdf';
-import { BsCloudDownload } from 'react-icons/bs';
 
 function Contact() {
         return (
@@ -17,8 +15,6 @@ function Contact() {
                   <a className="contact__link" href="https://www.linkedin.com/in/zementeshome/" target="_blank" rel="noreferrer"><p className="contact__info">linkedin.com/zementeshome</p></a>
                 <h2 className="contact__sub-heading">github</h2>
                   <a className="contact__link" href="https://github.com/zementeshome" target="_blank" rel="noreferrer"><p className="contact__info">github.com/zementeshome</p></a>
-                <h2 className="contact__sub-heading">resume</h2>
-                  <a className="contact__link" href={Pdf} download="ZemenTeshome_Resume"><p className="contact__info"><BsCloudDownload /></p></a>
             </div>
                 <h2 className="contact__sub-heading">credits</h2>
                   <a className="contact__link" href="https://www.instagram.com/gemini_baybee_/" target="_blank" rel="noreferrer"> <p className="contact__credit">background design on home page done by <span>zena teferi</span></p></a>

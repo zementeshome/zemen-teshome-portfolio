@@ -3,18 +3,18 @@ import './AboutImage.scss';
 
 function AboutImage() {
     return (
-        <div class="aboutImage">
-        <div class="block">
-            <div class="side -main"></div>
-            <div class="side -left"></div>
+        <div className="aboutImage">
+        <div className="block">
+            <div className="side -main"></div>
+            <div className="side -left"></div>
         </div>
-        <div class="block">
-            <div class="side -main"></div>
-            <div class="side -left"></div>
+        <div className="block">
+            <div className="side -main"></div>
+            <div className="side -left"></div>
         </div>
-        <div class="block">
-            <div class="side -main"></div>
-            <div class="side -left"></div>
+        <div className="block">
+            <div className="side -main"></div>
+            <div className="side -left"></div>
         </div>
     </div>
     )

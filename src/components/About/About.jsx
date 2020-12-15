@@ -14,10 +14,10 @@ import { FaReact } from 'react-icons/fa';
 import { FaAngular } from 'react-icons/fa';
 import { FaNodeJs } from 'react-icons/fa';
 import { SiFirebase } from 'react-icons/si';
+import { DiMongodb } from 'react-icons/di';
 import { SiMysql } from 'react-icons/si';
 import { FaGithub } from 'react-icons/fa';
 import { FaTerminal } from 'react-icons/fa';
-import { SiMicrosoftoffice } from 'react-icons/si';
 import Arrow from '../../BackgroundImage/iconmonstr-arrow-66.svg';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -109,20 +109,12 @@ function About() {
                 <p className="about__skills-icon"> <FaAngular /> </p>
                 <p className="about__skills-icon"><FaNodeJs /> </p>
                 <p className="about__skills-icon"><SiFirebase /></p>
+                <p className="about__skills-icon"><DiMongodb /></p>
                 <p className="about__skills-icon"><SiMysql /></p>
                 <p className="about__skills-icon"> <FaGithub /></p>
                 <p className="about__skills-icon"><FaTerminal /></p>
-                <p className="about__skills-icon"><SiMicrosoftoffice /></p>
                 </div>
             </div>
-            {/* <div className="about__skills-second" ref={addToRefs}>
-                <p className="about__skills-icon"><FaNodeJs /> </p>
-                <p className="about__skills-icon"><SiFirebase /></p>
-                <p className="about__skills-icon"><SiMysql /></p>
-                <p className="about__skills-icon"> <FaGithub /></p>
-                <p className="about__skills-icon"><FaTerminal /></p>
-                <p className="about__skills-icon"><SiMicrosoftoffice /></p>
-            </div> */}
                 <img className="about__scroll-top" ref={aboutRef} src={Arrow} alt="arrow" onClick={() => {scroll.scrollToTop()}}/>
           </section>
      </section>
