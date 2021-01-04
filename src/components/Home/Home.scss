@@ -93,10 +93,6 @@ body {
       justify: center;
       margin-left: -1rem;
       opacity: 1;
-	    animation-name: fadeInOpacity;
-	    animation-iteration-count: 1;
-	    animation-timing-function: ease-in;
-	    animation-duration: 4s;
     }
     @include tablet {
       padding: 12%;

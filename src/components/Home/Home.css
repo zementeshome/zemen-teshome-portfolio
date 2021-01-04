@@ -1,0 +1,258 @@
+@font-face {
+  font-family: "Aileron Regular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/Aileron-Regular.woff") format("woff");
+}
+@font-face {
+  font-family: "Aileron Thin";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/Aileron-Thin.woff") format("woff");
+}
+@font-face {
+  font-family: "Aileron Bold";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/Aileron-Bold.woff") format("woff");
+}
+@font-face {
+  font-family: "Aileron Black";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/Aileron-Black.woff") format("woff");
+}
+@font-face {
+  font-family: "Aileron UltraLight";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./../fonts/Aileron-UltraLight.woff") format("woff");
+}
+body {
+  background: black;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+@media only screen and (min-width: 320px) {
+  .intro {
+    margin: -2rem 0 0 2vw;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 300px;
+    padding-top: 3rem;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 768px) {
+  .intro {
+    margin: -2rem 0 0 3vw;
+  }
+}
+@media only screen and (min-width: 320px) and (min-width: 1200px) {
+  .intro {
+    margin-top: -2rem 0 0 4vw;
+  }
+}
+.intro .text {
+  display: none;
+}
+.intro.go .text {
+  font-size: 23px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+@media only screen and (min-width: 768px) {
+  .intro.go .text {
+    font-size: 62px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .intro.go .text {
+    font-size: 70px;
+  }
+}
+.intro.go .text-stroke,
+.intro.go .text-stroke-2 {
+  stroke: white;
+  stroke-width: 5px;
+  stroke-dashoffset: -900;
+  stroke-dasharray: 900;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  -webkit-animation: dash 2.5s ease-in-out forwards;
+          animation: dash 2.5s ease-in-out forwards;
+  fill: none;
+}
+.intro.go .text-stroke:nth-child(2) {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+}
+.intro.go .text-stroke:nth-child(3) {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.intro.go .text-stroke-2 {
+  stroke: white;
+  -webkit-animation-delay: 1.2s;
+          animation-delay: 1.2s;
+}
+.intro.go .text-stroke:nth-child(5) {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+}
+.intro.go .text-stroke:nth-child(6) {
+  -webkit-animation-delay: 1.8s;
+          animation-delay: 1.8s;
+}
+
+@-webkit-keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .home__background-image {
+    background: url("../../BackgroundImage/v2.svg");
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: -20rem 0 0 5vw;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify: center;
+    margin-left: -1rem;
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home__background-image {
+    padding: 12%;
+    margin: -26rem 0 0 0vw;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home__background-image {
+    padding: 43%;
+    background-position: left;
+    margin: -28rem 5vw 0 0;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .home__footer-credit {
+    color: white;
+    font-family: "Aileron Regular";
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin-right: 5vw;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 320px) {
+  .home__arrow {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home__arrow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 2rem 0 0 8vw;
+    width: 7%;
+    opacity: 1;
+    -webkit-animation-name: fadeInOpacity;
+            animation-name: fadeInOpacity;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home__arrow {
+    width: 5%;
+    margin-left: 6vw;
+  }
+}
+
+@-webkit-keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media only screen and (min-width: 320px) {
+  .home__arrow-top {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home__arrow-top {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 8vw;
+    width: 7%;
+    opacity: 1;
+    -webkit-animation-name: fadeInOpacity;
+            animation-name: fadeInOpacity;
+    -webkit-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in;
+            animation-timing-function: ease-in;
+    -webkit-animation-duration: 4s;
+            animation-duration: 4s;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .home__arrow-top {
+    width: 5%;
+    margin-left: 6vw;
+  }
+}
+/*# sourceMappingURL=Home.css.map */
