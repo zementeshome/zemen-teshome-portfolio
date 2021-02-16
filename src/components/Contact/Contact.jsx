@@ -12,7 +12,7 @@ function Contact() {
                 <h2 className="contact__sub-heading">email</h2>
                   <a className="contact__link" href="mailto: zementeshome@gmail.com" target="_blank" rel="noreferrer"><p className="contact__info">zementeshome@gmail.com</p></a>
                 <h2 className="contact__sub-heading">linkedin</h2>
-                  <a className="contact__link" href="https://www.linkedin.com/in/zementeshome/" target="_blank" rel="noreferrer"><p className="contact__info">linkedin.com/zementeshome</p></a>
+                  <a className="contact__link" href="https://www.linkedin.com/in/zementeshome/" target="_blank" rel="noreferrer"><p className="contact__info">linkedin.com/in/zementeshome</p></a>
                 <h2 className="contact__sub-heading">github</h2>
                   <a className="contact__link" href="https://github.com/zementeshome" target="_blank" rel="noreferrer"><p className="contact__info">github.com/zementeshome</p></a>
             </div>
