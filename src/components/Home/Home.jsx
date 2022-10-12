@@ -71,7 +71,7 @@ function Home() {
             className="text text-stroke text-stroke-2"
             clip-path="url(#text2)"
           >
-            FULL STACK DEVELOPER
+            SOFTWARE DEVELOPER
           </text>
           <text
             text-anchor="start"
@@ -90,7 +90,7 @@ function Home() {
             </clipPath>
             <clipPath id="text2">
               <text text-anchor="start" x="40" y="250" className="text">
-                FULL STACK DEVELOPER
+                SOFTWARE DEVELOPER
               </text>
             </clipPath>
             <clipPath id="text3">
