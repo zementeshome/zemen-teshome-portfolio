@@ -27,7 +27,7 @@ const sections = [
   {
     title: "ABOUT ME",
     subtitle:
-      "hi, i'm zemen and i build things. i'm a software developer who is passionate about building user-friendly, accessible at components. when i'm not coding, i'm usually digging for music.",
+      "hi, i'm zemen and i build things. i'm a software developer who is passionate about building user-friendly, accessible components. when i'm not coding, i'm usually digging for music.",
   },
   {
     title: "SKILLS",
