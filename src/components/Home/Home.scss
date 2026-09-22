@@ -1,20 +1,20 @@
-@import '../../styles/partials/variables';
+@import "../../styles/partials/variables";
 
-@import '../../styles/partials/fonts';
+@import "../../styles/partials/fonts";
 
 body {
-    background: black;
-    padding: 0;
-    margin: 0;
-  }
+  background: black;
+  padding: 0;
+  margin: 0;
+}
 
-  .container {
-      display: flex;
-      justify-content: flex-end;
-      width: 100%;
-  }
-  
-  .intro {
+.container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.intro {
   @include mobile {
     margin: -2rem 0 0 2vw;
     width: 100%;
@@ -22,145 +22,145 @@ body {
     height: 300px;
     padding-top: 3rem;
 
+    @include tablet {
+      margin: -2rem 0 0 3vw;
+    }
+    @include desktop {
+      margin-top: -2rem 0 0 4vw;
+    }
+  }
+  .text {
+    display: none;
+  }
+  &.go {
+    .text {
+      font-size: 23px;
+      display: flex;
+      @include tablet {
+        font-size: 62px;
+      }
+      @include desktop {
+        font-size: 70px;
+      }
+    }
+    .text-stroke,
+    .text-stroke-2 {
+      stroke: white;
+      stroke-width: 5px;
+      stroke-dashoffset: -900;
+      stroke-dasharray: 900;
+      stroke-linecap: butt;
+      stroke-linejoin: round;
+      animation: dash 2.5s ease-in-out forwards;
+      fill: none;
+    }
+    .text-stroke:nth-child(2) {
+      animation-delay: 0.3s;
+    }
+    .text-stroke:nth-child(3) {
+      animation-delay: 0.9s;
+    }
+    .text-stroke-2 {
+      stroke: white;
+      animation-delay: 1.2s;
+    }
+    .text-stroke:nth-child(5) {
+      animation-delay: 1.5s;
+    }
+    .text-stroke:nth-child(6) {
+      animation-delay: 1.8s;
+    }
+  }
+}
+
+@keyframes dash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+.home__background-image {
+  @include mobile {
+    background: url("../../BackgroundImage/v2.svg");
+    width: 100%;
+    height: 100vh;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: -20rem 0 0 5vw;
+    flex-direction: column;
+    display: flex;
+    justify: center;
+    margin-left: -1rem;
+    opacity: 1;
+  }
   @include tablet {
-    margin: -2rem 0 0 3vw;
+    padding: 12%;
+    margin: -26rem 0 0 0vw;
   }
   @include desktop {
-    margin-top: -2rem 0 0 4vw;
+    padding: 43%;
+    background-position: left;
+    margin: -28rem 5vw 0 0;
   }
-  }
-    .text { 
-      display: none;
-    }
-    &.go {
-      .text {
-        font-size: 23px;
-        display: flex;
-        @include tablet {
-          font-size: 62px;
-        }
-        @include desktop {
-          font-size: 70px;
-        }
-      }
-      .text-stroke,
-      .text-stroke-2 {
-        stroke: white;
-        stroke-width: 5px;
-        stroke-dashoffset: -900;
-        stroke-dasharray: 900;
-        stroke-linecap: butt;
-        stroke-linejoin: round;
-        animation: dash 2.5s ease-in-out forwards;
-        fill: none;
-      }
-      .text-stroke:nth-child(2) {
-        animation-delay: .3s;
-      }
-      .text-stroke:nth-child(3) {
-        animation-delay: .9s;
-      }
-      .text-stroke-2 {
-        stroke: white;
-        animation-delay: 1.2s;
-      }
-      .text-stroke:nth-child(5) {
-        animation-delay: 1.5s;
-      }
-      .text-stroke:nth-child(6) {
-        animation-delay: 1.8s;
-      }
-    }
-  }
-  
-  @keyframes dash {
-    100% {
-      stroke-dashoffset: 0;
-    }
-  }
+}
 
-  .home__background-image  {
-    @include mobile {
-      background: url('../../BackgroundImage/v2.svg');
-      width: 100%;
-      height: 100vh;
-      background-size: contain;
-      background-repeat: no-repeat;
-      background-position:center center;
-      margin: -20rem 0 0 5vw;
-      flex-direction: column;
-      display: flex;
-      justify: center;
-      margin-left: -1rem;
-      opacity: 1;
-    }
-    @include tablet {
-      padding: 12%;
-      margin: -26rem 0 0 0vw;
-    }
-    @include desktop {
-      padding: 43%;
-      background-position: left;
-      margin: -28rem 5vw 0 0;
-    }
+.home__footer-credit {
+  @include mobile {
+    color: white;
+    font-family: "Aileron Regular";
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vw;
+    font-size: 10px;
   }
+}
 
-  .home__footer-credit {
-    @include mobile {
-      color: white;
-      font-family: 'Aileron Regular';
-      display: flex;
-      justify-content: flex-end;
-      margin-right: 5vw;
-      font-size: 10px;
-    }
+.home__arrow {
+  @include mobile {
+    display: none;
   }
+  @include tablet {
+    display: flex;
+    margin: 2rem 0 0 8vw;
+    width: 7%;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+  }
+  @include desktop {
+    width: 5%;
+    margin-left: 6vw;
+  }
+}
 
-  .home__arrow {
-    @include mobile {
-      display: none;
-    }
-    @include tablet {
-      display: flex;
-      margin: 2rem 0 0 8vw;
-      width: 7%;
-      opacity: 1;
-	    animation-name: fadeInOpacity;
-	    animation-iteration-count: 1;
-	    animation-timing-function: ease-in;
-	    animation-duration: 4s;
-    }
-    @include desktop {
-      width: 5%;
-      margin-left: 6vw;
-    }
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
   }
+  100% {
+    opacity: 1;
+  }
+}
 
-  @keyframes fadeInOpacity {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
+.home__arrow-top {
+  @include mobile {
+    display: none;
   }
-
-  .home__arrow-top {
-    @include mobile {
-      display: none;
-    }
-    @include tablet {
-      display: flex;
-      margin-left: 8vw;
-      width: 7%;
-      opacity: 1;
-	    animation-name: fadeInOpacity;
-	    animation-iteration-count: 1;
-	    animation-timing-function: ease-in;
-	    animation-duration: 4s;
-    }
-    @include desktop {
-      width: 5%;
-      margin-left: 6vw;
-    }
+  @include tablet {
+    display: flex;
+    margin-left: 8vw;
+    width: 7%;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
   }
+  @include desktop {
+    width: 5%;
+    margin-left: 6vw;
+  }
+}

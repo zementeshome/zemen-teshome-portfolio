@@ -11,10 +11,11 @@ class App extends React.Component {
     work: [
       {
         id: 0,
-        image: "/assets/images/gitlab.gif",
-        title: "loblaw digital",
-        description: "gitlab contributions",
-        year: "2021-current",
+        image: "/assets/images/mobile-editor.gif",
+        title: "mobile home screen editor",
+        description:
+          "app that lets users preview and modify an example mobile app home screen in real time, with the ability to configure three elements: a carousel, a text section and CTA section.",
+        year: 2026,
         link: "</>",
       },
       {
