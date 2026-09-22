@@ -88,102 +88,109 @@ function About() {
   };
 
   return (
-    <section className="about">
-      <Header />
-      <div className="about__image-container" ref={aboutRef}>
-        <AboutImage />
-        <ScrollLink
-          className="about__scroll"
-          to="me"
-          smooth={true}
-          duration={1000}
-        >
-          <img
-            className="about__arrow"
-            src={
-              process.env.PUBLIC_URL + "/assets/images/iconmonstr-arrow-65.svg"
-            }
-            alt=""
-          />
-        </ScrollLink>
-      </div>
-      <section className="about__section-2" id="me">
-        {sections.map(({ title, subtitle }) => {
-          return (
-            <div key={title} className="about__text-container" ref={addToRefs}>
-              <h2 className="about__header">{title}</h2>
-              <div className="about__text-box">
-                <p className="about__text">{subtitle}</p>
-              </div>
-            </div>
-          );
-        })}
-        <div className="about__skills" ref={addToRefs}>
-          <div className="about__flex">
-            <p className="about__skills-icon">
-              {" "}
-              <FaReact />{" "}
-            </p>
-            <p className="about__skills-icon">
-              {" "}
-              <SiTypescript />{" "}
-            </p>
-            <p className="about__skills-icon">
-              {" "}
-              <FaJs />{" "}
-            </p>
-            <p className="about__skills-icon">
-              {" "}
-              <FaHtml5 />{" "}
-            </p>
-            <p className="about__skills-icon">
-              {" "}
-              <FaAccessibleIcon />{" "}
-            </p>
-            <p className="about__skills-icon">
-              <FaCss3Alt />{" "}
-            </p>
-            <p className="about__skills-icon">
-              <FaSass />{" "}
-            </p>
-            <p className="about__skills-icon">
-              <SiTailwindcss />{" "}
-            </p>
-            <p className="about__skills-icon">
-              <FaNodeJs />{" "}
-            </p>
-            <p className="about__skills-icon">
-              <SiFirebase />
-            </p>
-            <p className="about__skills-icon">
-              <SiRedux />
-            </p>
-            <p className="about__skills-icon">
-              <SiJest />
-            </p>
-            <p className="about__skills-icon">
-              <SiStorybook />
-            </p>
-            <p className="about__skills-icon">
-              {" "}
-              <FaGithub />
-            </p>
-            <p className="about__skills-icon">
-              <FaTerminal />
-            </p>
-          </div>
+    <main role="main">
+      <section className="about">
+        <Header />
+        <div className="about__image-container" ref={aboutRef}>
+          <AboutImage />
+          <ScrollLink
+            className="about__scroll"
+            to="me"
+            smooth={true}
+            duration={1000}
+          >
+            <img
+              className="about__arrow"
+              src={
+                process.env.PUBLIC_URL +
+                "/assets/images/iconmonstr-arrow-65.svg"
+              }
+              alt=""
+            />
+          </ScrollLink>
         </div>
-        <img
-          className="about__scroll-top"
-          ref={aboutRef}
-          src={Arrow}
-          alt="arrow"
-          onClick={() => {
-            scroll.scrollToTop();
-          }}
-        />
+        <section className="about__section-2" id="me">
+          {sections.map(({ title, subtitle }) => {
+            return (
+              <div
+                key={title}
+                className="about__text-container"
+                ref={addToRefs}
+              >
+                <h2 className="about__header">{title}</h2>
+                <div className="about__text-box">
+                  <p className="about__text">{subtitle}</p>
+                </div>
+              </div>
+            );
+          })}
+          <div className="about__skills" ref={addToRefs}>
+            <div className="about__flex">
+              <p className="about__skills-icon">
+                {" "}
+                <FaReact />{" "}
+              </p>
+              <p className="about__skills-icon">
+                {" "}
+                <SiTypescript />{" "}
+              </p>
+              <p className="about__skills-icon">
+                {" "}
+                <FaJs />{" "}
+              </p>
+              <p className="about__skills-icon">
+                {" "}
+                <FaHtml5 />{" "}
+              </p>
+              <p className="about__skills-icon">
+                {" "}
+                <FaAccessibleIcon />{" "}
+              </p>
+              <p className="about__skills-icon">
+                <FaCss3Alt />{" "}
+              </p>
+              <p className="about__skills-icon">
+                <FaSass />{" "}
+              </p>
+              <p className="about__skills-icon">
+                <SiTailwindcss />{" "}
+              </p>
+              <p className="about__skills-icon">
+                <FaNodeJs />{" "}
+              </p>
+              <p className="about__skills-icon">
+                <SiFirebase />
+              </p>
+              <p className="about__skills-icon">
+                <SiRedux />
+              </p>
+              <p className="about__skills-icon">
+                <SiJest />
+              </p>
+              <p className="about__skills-icon">
+                <SiStorybook />
+              </p>
+              <p className="about__skills-icon">
+                {" "}
+                <FaGithub />
+              </p>
+              <p className="about__skills-icon">
+                <FaTerminal />
+              </p>
+            </div>
+          </div>
+          <img
+            className="about__scroll-top"
+            ref={aboutRef}
+            src={Arrow}
+            alt="arrow"
+            onClick={() => {
+              scroll.scrollToTop();
+            }}
+          />
+        </section>
       </section>
-    </section>
+    </main>
   );
 }
 export default About;

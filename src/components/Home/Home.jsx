@@ -23,111 +23,113 @@ function Home() {
   });
 
   return (
-    <section className="home">
-      <Header />
-      <div className="container">
-        <svg className="intro">
-          <text
-            text-anchor="start"
-            x="10"
-            y="200"
-            className="text text-stroke"
-            clip-path="url(#text1)"
-            style={{ fontFamily: "Aileron Thin" }}
-          >
-            ZEMEN TESHOME
-          </text>
-          <text
-            text-anchor="start"
-            x="40"
-            y="250"
-            className="text text-stroke-2"
-            clip-path="url(#text2)"
-          >
-            FRONTEND DEVELOPER
-          </text>
-          <text
-            text-anchor="start"
-            x="10"
-            y="300"
-            className="text text-stroke-2"
-            clip-path="url(#text3)"
-          >
-            BASED IN TORONTO
-          </text>
-          <text
-            text-anchor="start"
-            x="10"
-            y="200"
-            className="text text-stroke text-stroke-2"
-            clip-path="url(#text1)"
-          >
-            ZEMEN TESHOME
-          </text>
-          <text
-            text-anchor="start"
-            x="40"
-            y="250"
-            className="text text-stroke text-stroke-2"
-            clip-path="url(#text2)"
-          >
-            FRONTEND DEVELOPER
-          </text>
-          <text
-            text-anchor="start"
-            x="10"
-            y="300"
-            className="text text-stroke text-stroke-2"
-            clip-path="url(#text3)"
-          >
-            BASED IN TORONTO
-          </text>
-          <defs>
-            <clipPath id="text1">
-              <text text-anchor="start" x="10" y="200" className="text">
-                ZEMEN TESHOME
-              </text>
-            </clipPath>
-            <clipPath id="text2">
-              <text text-anchor="start" x="40" y="250" className="text">
-                FRONTEND DEVELOPER
-              </text>
-            </clipPath>
-            <clipPath id="text3">
-              <text text-anchor="start" x="10" y="300" className="text">
-                BASED IN TORONTO
-              </text>
-            </clipPath>
-          </defs>
-        </svg>
-      </div>
-      <ScrollLink
-        className="home__scroll"
-        to="footer"
-        smooth={true}
-        duration={1000}
-      >
+    <main role="main">
+      <section className="home">
+        <Header />
+        <div className="container">
+          <svg className="intro">
+            <text
+              textAnchor="start"
+              x="10"
+              y="200"
+              className="text text-stroke"
+              clipPath="url(#text1)"
+              style={{ fontFamily: "Aileron Thin" }}
+            >
+              ZEMEN TESHOME
+            </text>
+            <text
+              textAnchor="start"
+              x="40"
+              y="250"
+              className="text text-stroke-2"
+              clipPath="url(#text2)"
+            >
+              FRONTEND DEVELOPER
+            </text>
+            <text
+              textAnchor="start"
+              x="10"
+              y="300"
+              className="text text-stroke-2"
+              clipPath="url(#text3)"
+            >
+              BASED IN TORONTO
+            </text>
+            <text
+              textAnchor="start"
+              x="10"
+              y="200"
+              className="text text-stroke text-stroke-2"
+              clipPath="url(#text1)"
+            >
+              ZEMEN TESHOME
+            </text>
+            <text
+              textAnchor="start"
+              x="40"
+              y="250"
+              className="text text-stroke text-stroke-2"
+              clipPath="url(#text2)"
+            >
+              FRONTEND DEVELOPER
+            </text>
+            <text
+              textAnchor="start"
+              x="10"
+              y="300"
+              className="text text-stroke text-stroke-2"
+              clipPath="url(#text3)"
+            >
+              BASED IN TORONTO
+            </text>
+            <defs>
+              <clipPath id="text1">
+                <text textAnchor="start" x="10" y="200" className="text">
+                  ZEMEN TESHOME
+                </text>
+              </clipPath>
+              <clipPath id="text2">
+                <text textAnchor="start" x="40" y="250" className="text">
+                  FRONTEND DEVELOPER
+                </text>
+              </clipPath>
+              <clipPath id="text3">
+                <text textAnchor="start" x="10" y="300" className="text">
+                  BASED IN TORONTO
+                </text>
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <ScrollLink
+          className="home__scroll"
+          to="footer"
+          smooth={true}
+          duration={1000}
+        >
+          <img
+            className="home__arrow"
+            src={
+              process.env.PUBLIC_URL + "/assets/images/iconmonstr-arrow-65.svg"
+            }
+            alt="arrow"
+          />
+        </ScrollLink>
+        <div className="home__background-container">
+          <div className="home__background-image"></div>
+        </div>
         <img
-          className="home__arrow"
-          src={
-            process.env.PUBLIC_URL + "/assets/images/iconmonstr-arrow-65.svg"
-          }
+          className="home__arrow-top"
+          src={Arrow}
           alt="arrow"
+          onClick={() => {
+            scroll.scrollToTop();
+          }}
         />
-      </ScrollLink>
-      <div classname="home__background-container">
-        <div className="home__background-image"></div>
-      </div>
-      <img
-        className="home__arrow-top"
-        src={Arrow}
-        alt="arrow"
-        onClick={() => {
-          scroll.scrollToTop();
-        }}
-      />
-      <Footer />
-    </section>
+        <Footer />
+      </section>
+    </main>
   );
 }
 
