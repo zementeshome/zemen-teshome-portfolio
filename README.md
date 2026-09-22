@@ -1,4 +1,4 @@
-# My portfolio
+# Zemen's Portfolio
 
 ## Run the app locally
 
